@@ -1,0 +1,29 @@
+.placement {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vw;
+	margin-bottom: -0.8vw;
+	width: 20%;
+}
+.lu {
+	background-color: grey;
+	font-family: Helvetica, sans-serif;
+	font-size: 1vw;
+	text-align: center;
+}
+.non-lu {
+	background-color: #E9383F;
+	font-family: Helvetica, sans-serif;
+	font-size: 1vw;
+	text-align: center;
+}
+.avatara3 {
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}

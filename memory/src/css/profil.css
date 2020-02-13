@@ -1,0 +1,422 @@
+html, body{
+	margin: 0; padding: 0;
+}
+
+body {
+    background-color: rgb(197, 194, 194);
+}
+
+.title {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+	font-family: 'Open', Helvetica;
+	color: #E9383F;
+}
+
+@font-face {
+	font-family: 'Open';
+	src: url(../css/AlphaRope.ttf);
+}
+
+.photo {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	width: 80%;
+}
+
+.previous {
+	display: inline-block;
+	background-color: #E9383F;
+	margin: 10px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.next {
+	display: inline-block;
+	background-color: #E9383F;
+	margin: 10px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#slideshow {
+	position: relative;
+	width: 640px;
+	height: 310px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	width: 640px;
+	height: 310px;
+	overflow: hidden;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+.div-supp-img {
+	/* position: relative; */
+	margin-left: 42.5%;
+	margin-right: auto;
+	width: 100px;
+}
+
+.supp-img {
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E9383F, white);
+	box-shadow: 2px 1000px 1px #fff inset;
+	padding: .5vw 5vw;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: border-box;
+	border-radius: 100rem;
+	font-size: 1.2vw;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	font-family: Helvetica;
+}
+
+.supp-img:hover {
+	box-shadow: none;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, white, #E9383F);
+	color: white;
+}
+
+.div-table {
+	position: relative;
+	margin-left: 5%;
+	margin-right: 75%;
+	height: 600px;
+	width: 40%;
+	background-color: white;
+	font-family: Helvetica, sans-serif;
+}
+
+.profil-table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20px;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+.retapre {
+	display: block;
+	margin-top: -10vw;
+}
+
+.profil-info {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20px;
+	border-collapse: collapse;
+	width: 60%;
+}
+
+.profil-info td {
+	padding: 8px;
+}
+
+.profil-info tr {
+  background-color: rgb(197, 194, 194);
+}
+
+.profil-table td {
+  	padding: 8px;
+}
+
+.profil-table tr {
+	background-color: #E9383F;
+	/* background-color: rgb(197, 194, 194); */
+}
+
+.profil-button {
+	/* position: relative;
+	left: 20vw; */
+	margin-left: 7%;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E9383F, white);
+	box-shadow: 2px 1000px 1px #fff inset;
+	padding: .5vw 3vw;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: border-box;
+	border-radius: 100rem;
+	font-size: 1.2vw;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	cursor: pointer;
+	font-family: Helvetica;
+}
+
+.profil-button:hover {
+	box-shadow: none;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, white, #E9383F);
+	color: white;
+}
+
+.div-modif {
+	position: relative;
+	margin-left: 35%;
+	margin-right: auto;
+	top: -350px;
+	width: 50%;
+	background-color: white;
+}
+
+.modif-button {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.preview-img {
+	position: relative;
+	margin-left: 30%;
+	margin-right: auto;
+	width: 300px;
+	padding: 20px;
+}
+
+.like-button {
+	background-color: grey;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	margin-left: 40%;
+	top: 40%;
+}
+
+.div-button {
+	position: relative;
+	margin-left: 50%;
+	margin-right: auto;
+	top: -350px;
+	width: 50%;
+	height: 350px;
+}
+
+.tab, .tab2 {
+	font-family: Helvetica;
+	font-size: 1.3vw;
+}
+
+.tab2 {
+	font-style: italic;
+}
+.mcdo {
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E9383F, white);
+	box-shadow: 2px 1000px 1px #fff inset;
+	padding: .5vw 3vw;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: border-box;
+	border-radius: 100rem;
+	font-size: 1.2vw;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	font-family: Helvetica;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mcdo:hover {
+	box-shadow: none;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, white, #E9383F);
+	color: white;
+}
+.trophaut {
+	height: 50%;
+}
+.ligne {
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E9383F, white);
+	box-shadow: 2px 1000px 1px #fff inset;
+	padding: .5vw 3vw;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: border-box;
+	border-radius: 100rem;
+	font-size: 1vw;
+	text-align: center;
+	text-decoration: none;
+	font-family: Helvetica;
+	margin-left: auto;
+	margin-right: auto;
+}
+.like {
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #E9383F, white);
+	box-shadow: 2px 1000px 1px #fff inset;
+	padding: .5vw 3vw;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: border-box;
+	border-radius: 100rem;
+	font-size: 1vw;
+	text-align: center;
+	text-decoration: none;
+	font-family: Helvetica;
+	margin-left: 15%;
+	margin-right: auto;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+.like:hover {
+	box-shadow: none;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, white, #E9383F);
+	color: white;
+}
+.butcool {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 100px;
+	margin-right: auto;
+	margin-left: 45%;
+}
+.butsend {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 100px;
+	margin-right: auto;
+	margin-left: 5%;
+}
+.buttt {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 70px;
+	margin-right: auto;
+	margin-left: 40%;
+}
+.butpass {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 130px;
+	margin-right: auto;
+	margin-left: 70%;
+}
+.butaccount {
+	background-color: #E9383F;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	width: 130px;
+	margin-right: auto;
+	margin-left: 20%;
+}
+
+.typelove {
+	font-size: 1vw;
+	font-family: Helvetica, sans-serif;
+	font-style: oblique;
+	text-align: left;
+}
+.repo {
+	font-size: 1vw;
+	font-family: Helvetica, sans-serif;
+	font-style: oblique;
+	text-align: center;
+}

@@ -1,0 +1,68 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+.avataraa {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+}
+.message-send {
+	background-color: white;
+}
+.user {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.3vw;
+	color: #E9383F;
+	text-align: center;
+	font-style: oblique;
+	font-weight: 700;
+}
+.avatara2 {
+	display: block;
+	margin-right: auto;
+	margin-left: 5vw;
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+}
+.textsend {
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.2vw;
+}
+.date {
+	text-align: right;
+}
+.putsend {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:12px 0 12px 0;
+	color: #E9383F;
+	background: #f5f5f5;
+	border: none;
+	font: bold 12px Verdana;
+	padding: 4px 4px 4px 4px;
+	box-shadow:1px 1px 3px #999;
+}
+.envoiemerde {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	font-size: 1.3vw;
+	font-family: Helvetica, sans-serif;
+	height: 20px;
+}

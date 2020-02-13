@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	background-image: url(../css/resources/fond.jpg);
+}
+
+.profil {
+	position: relative;
+	width: 150px;
+	/* height: 200px; */
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 2px solid #ddd;
+	background: #FFF;
+	border-color: #E9383F;
+	text-align: center;
+	margin-top: 2vw;
+}
+
+.button {
+	background-color: gray;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 16px 2px;
+	cursor: pointer;
+	background-color: #E9383F;
+}
+
+.home {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25%;
+	width: 400px;
+}
+
+.home form {
+	width: 400px;
+}
+
+.home input, select {
+	width: 100%;
+	padding: 7px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	font-size: 2vw;
+}
+
+.home input[type=submit] {
+	width: 100%;
+	background-color: #E9383F;
+	color: white;
+	padding: 7px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: Helvetica;
+	font-size: 2vw;
+}
+
+.home input[type=submit]:hover {
+	background-color: #E9383F;
+}
+
+.table-home {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.div-trie select {
+	width: 7%;
+}
+
+.typein, .reset {
+	font-family: Helvetica;
+	font-size: 1.8vw;
+	font-style: oblique;
+}
+
+.form-change {
+	width: 50%;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 1vw;
+}
+.carre {
+	position: relative;
+	left: 20vw;	
+	font-family: Helvetica, sans-serif;
+	background-color: white;
+}
+.leg {
+	padding: 0px 0px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 1.5vw;
+	font-family: Helvetica, sans-serif;
+	color: #E9383F;
+}
+.ok {
+	margin-left: auto;
+	margin-right: auto;
+}
+.butbut {
+	border-radius:12px 0 12px 0;
+	color: #E9383F;
+	background: #f5f5f5;
+	border:none;
+	font:bold 12px Verdana;
+	padding: 8px 5px 8px 5px;
+	box-shadow:1px 1px 3px #999;
+}
+.one, .dos, .tres {
+	margin-right: 2vw;
+}
+.quatre {
+	margin-right: 13.3vw;
+}
+
+.butbut1 {
+	border-radius:12px 0 12px 0;
+	color: #E9383F;
+	background: #f5f5f5;
+	border: none;
+	font: bold 12px Verdana;
+	padding: 4px 4px 4px 4px;
+	box-shadow:1px 1px 3px #999;
+}
+.suggest {
+	display: inline;
+	border-radius:12px 0 12px 0;
+	color: #E9383F;
+	background: #f5f5f5;
+	border: none;
+	font: bold 12px Verdana;
+	padding: 4px 4px 4px 4px;
+	box-shadow:1px 1px 3px #999;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lecedric {
+	display: inline;
+	width: 10%;
+	height: 50%;
+	font-family: Helvetica, sans-serif;
+	font-size: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clecss {
+	border-radius:12px 0 12px 0;
+	color: #E9383F;
+	background: #f5f5f5;
+	border: none;
+	font: bold 12px Verdana;
+	padding: 4px 4px 4px 4px;
+	box-shadow:1px 1px 3px #999;
+}
